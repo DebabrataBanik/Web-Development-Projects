@@ -1,0 +1,92 @@
+:root{
+  --fw-light: 100;
+  --fw-normal: 300;
+  --fw-bold: 600; 
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #F28585;
+}
+
+.panel{
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  background-color: #F2E8DF;
+  overflow: hidden;
+}
+
+.panel-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  height: 100px;
+  width: 100%;
+  background-color: #86A69D;
+}
+.items{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #F2E8DF;
+}
+.items .box{
+  background-color: #F2E8DF;
+  color: #86A69D;
+  font-weight: var(--fw-bold);
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #0d4d3d;
+}
+
+.panel-content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: calc(100% - 100px);
+  padding: 25px;
+}
+.panel-content .bubble{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #F2C6C2;
+}
+.panel-content .bubble:hover{
+  cursor: pointer;
+  background-color: #F28585;
+}
+.msg{
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.new-game{
+  margin-top: 10px;
+  padding: 10px 20px;
+  cursor: pointer; 
+  background-color: #86A69D;
+  color: #F2E8DF;
+  font-weight: var(--fw-bold);
+  border-radius: 10px;
+}
