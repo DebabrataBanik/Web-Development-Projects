@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  min-height: 100vh;
+  /* width: 100%; */
+  background-color: #dfefaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  width: 500px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.box:hover{
+  cursor: pointer;
+}
