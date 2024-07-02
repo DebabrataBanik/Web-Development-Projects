@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+  --clr-success: rgb(145, 255, 0);
+  --clr-error: rgb(255, 81, 0);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2EDD0;
+  padding: 10px;
+}
+main{
+  width: 100%;
+}
+
+.container{
+  margin-inline: auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 35px 45px;
+  background-color: #D9CFA0;
+  border-radius: 20px;
+  box-shadow: 2px 5px 20px -10px #A6904E;
+}
+
+h2{
+  text-align: center;
+  color: #010B40;
+  text-wrap: balance;
+  margin-block: 10px;
+}
+
+.form-control{
+  padding-block: 20px;
+  color: #010B40;
+  position: relative;
+}
+.form-control label{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+.form-control input{
+  display: block;
+  width: 100%;
+  background-color: #F2EDD0;
+  border: none;
+  padding: 10px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  outline: none;
+  color: #A6904E;
+}
+.form-control.success input{
+  /* border: 2px solid var(--clr-success); */
+  background-color: #D9CFA0;
+  color: #A6904E;
+  border: 1px solid #A6904E;
+}
+.form-control.error input{
+  border: 2px solid var(--clr-error);
+}
+.form-control small{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: var(--clr-error);
+  /* display: none; */
+  visibility: hidden;
+}
+.form-control.error small{
+  visibility: visible;
+}
+
+button{
+  width: 100%;
+  padding-block: 12px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+  background-color: #A6904E;
+  color: #010B40;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 15px -5px #A6904E;
+  transition: all 0.25s;
+}
+button:active{
+  transform: translateY(2px);
+  box-shadow: none;
+}

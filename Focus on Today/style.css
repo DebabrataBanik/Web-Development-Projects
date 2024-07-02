@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --clr-bg: #FFEC9E;
+  --clr-card: #FFFBDA;
+  --clr-items: #FFBB70;
+  --clr-clicked-items: #ED9455;
+}
+
+*{
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background-color: var(--clr-bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  max-width: 376px;
+  width: 90%;
+  background-color: var(--clr-card);
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 1px 1px 10px -2px var(--clr-items);
+}
+
+h1{
+  margin-top: 0;
+  color: var(--clr-clicked-items);
+  font-weight: 900;
+}
+h2{
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-align: left;
+  color: var(--clr-clicked-items);
+}
+p{
+  color: var(--clr-items);
+}
+.goal-bar__container{
+  margin-block: 1rem;
+}
+.bar{
+  font-size: 0.8rem;
+  width: 100%;
+  height: 20px;
+  border: 1px solid var(--clr-clicked-items);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.fill{
+  width: 0%;
+  height: 100%;
+  background-color: var(--clr-clicked-items);
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: var(--clr-card);
+  display: flex;
+  align-items: center;
+}
+.fill span{
+  padding-left: 1rem;
+}
+.message{
+  width: 100%;
+  color: red;
+  font-size: .8rem;
+  text-align: left;
+  padding: 1rem 0.5rem 0rem 0.5rem;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.goal{
+  padding: 1rem;
+  border: 1px solid var(--clr-clicked-items);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+
+}
+
+input[type="checkbox"]{
+  /* width: 20px;
+  height: 20px; */
+  accent-color: var(--clr-clicked-items);
+  /* border-radius: 10px;
+  border: none; */
+  TODO: styling this is crazy basically disabling the actual checkbox and modifying its pseudo;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+input[type="textbox"]{
+  border: none;
+  height: 1rem;
+  outline: none;
+  color: var(--clr-items);
+  background-color: var(--clr-card);
+  padding-left: 1rem;
+  font-weight: 600;
+}
+.clicked{
+  color: var(--clr-clicked-items) !important;
+  text-decoration-line: line-through;
+}
+
+input::placeholder{
+  color: var(--clr-items);
+  opacity: 0.5;
+}
+.quote{
+  margin-bottom: 0;
+  color: var(--clr-clicked-items);
+  font-weight: 600;
+}
