@@ -19,7 +19,6 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .movie-container select {
@@ -29,7 +28,6 @@ main{
   padding: 0.2rem 0.5rem;
   background-color: #525050;
   color: #A0E418;
-  /* color: #E5F9BD; */
   border: 1px solid #E5F9BD;
   border-radius: 5px;
   outline: none;

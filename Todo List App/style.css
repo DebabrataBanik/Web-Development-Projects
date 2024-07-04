@@ -85,10 +85,6 @@ body{
   top: 2px;
   left: 8px;
 }
-.checkbox:checked:after ~ .input--box{
-  text-decoration: line-through;
-}
-
 
 .btn__container{
   padding: 1rem;
